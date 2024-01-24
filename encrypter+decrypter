@@ -43,11 +43,11 @@ public class encrypter {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		String alphabet;
+		String inAlphabet;
 		String word;
 		int shift = 0;
 		System.out.print("Enter all 26 letters for an encryption alphabet (testing purposes): ");
-		alphabet = scan.next();
+		inAlphabet = scan.next();
 		
 		System.out.print("Enter word to be encrypted: ");
 		word = scan.next();
@@ -55,12 +55,12 @@ public class encrypter {
 		System.out.print("Enter a shift value: ");
 		shift = scan.nextInt();
 		
-		System.out.println("Encrypted word: " + encrypt(alphabet, word, shift));
+		System.out.println("Encrypted word: " + encrypt(inAlphabet, word, shift));
 		
 		System.out.print("Input the encrypted word to return original word: ");
 		word = scan.next();
 		
-		System.out.print("Decrypted word: " + decrypt(alphabet, word, shift));
+		System.out.print("Decrypted word: " + decrypt(inAlphabet, word, shift));
 	}
 
 }
